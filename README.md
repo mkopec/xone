@@ -28,7 +28,7 @@ This driver is still in active development. Use at your own risk!
     - [x] Xbox One Stereo Headset (adapter or jack)
     - [ ] Xbox Wireless Headset
     - [ ] Third party wireless headsets (SteelSeries, Razer, etc.)
-- [ ] Racing wheels
+- [x] Racing wheels
 - [x] Xbox One Chatpad
 - [x] Xbox Adaptive Controller
 - [ ] Mad Catz Rock Band 4 Wireless Stratocaster
