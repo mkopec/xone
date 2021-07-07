@@ -75,7 +75,6 @@ struct gip_pkt_announce {
 
 struct gip_pkt_status {
 	u8 status;
-	u8 unknown[3];
 } __packed;
 
 struct gip_pkt_identify {
@@ -768,7 +767,7 @@ static int gip_handle_pkt_status(struct gip_client *client,
 {
 	struct gip_pkt_status *pkt = data;
 
-	if (len != header->length || len != sizeof(*pkt))
+	if (len != header->length || len < sizeof(*pkt))
 		return -EINVAL;
 
 	if (!(pkt->status & GIP_STATUS_CONNECTED)) {
